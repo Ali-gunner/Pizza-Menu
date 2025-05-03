@@ -12,14 +12,14 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(to right, #fff8ec, #fefdf6);
-  color: #222;
+  background-color: #121212;
+  color: #e0e0e0;
   font-weight: 400;
   line-height: 1.6;
   padding: 3.2rem;
   padding-bottom: 6rem;
   min-height: 100vh;
-  border-bottom: 1.6rem solid #ffc107;
+  border-bottom: 1.6rem solid #00ffb2;
 }
 
 .container {
@@ -37,12 +37,12 @@ body {
 }
 
 .header h1 {
-  color: #ffb300;
+  color: #00ffb2;
   text-transform: uppercase;
   text-align: center;
-  font-size: 5.2rem;
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
   position: relative;
 }
 
@@ -52,8 +52,8 @@ body {
   position: absolute;
   top: 50%;
   width: 12rem;
-  height: 3px;
-  background-color: #ffb300;
+  height: 2px;
+  background-color: #00ffb2;
   transform: translateY(-50%);
 }
 
@@ -75,40 +75,42 @@ body {
 .menu h2 {
   font-size: 2.8rem;
   text-transform: uppercase;
-  font-weight: 500;
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
+  font-weight: 600;
+  color: #ffffff;
+  border-top: 2px solid #00ffb2;
+  border-bottom: 2px solid #00ffb2;
   padding: 1rem 0;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .menu > p {
   font-size: 1.6rem;
   max-width: 60ch;
   text-align: center;
-  color: #444;
+  color: #b0b0b0;
 }
 
 .pizzas {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
+  gap: 3.2rem;
   width: 100%;
 }
 
 .pizza {
   display: flex;
   gap: 2rem;
-  background-color: #fffbe7;
+  background-color: #1e1e1e;
   padding: 2rem;
-  border-radius: 1.2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 255, 178, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .pizza:hover {
-  transform: translateY(-4px);
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 255, 178, 0.15);
 }
 
 .pizza img {
@@ -127,36 +129,35 @@ body {
 .pizza h3 {
   font-size: 2rem;
   font-weight: 500;
-  color: #333;
+  color: #ffffff;
 }
 
 .pizza p {
   font-size: 1.4rem;
   font-style: italic;
-  color: #666;
+  color: #aaaaaa;
   margin-bottom: auto;
 }
 
 .pizza span {
   font-size: 1.6rem;
-  font-weight: 500;
-  color: #111;
+  font-weight: 600;
+  color: #00ffb2;
 }
 
 .pizza.sold-out {
-  opacity: 0.5;
+  opacity: 0.4;
   filter: grayscale(100%);
 }
 
 .pizza.sold-out span {
-  color: red;
-  font-weight: bold;
+  color: #ff6b6b;
 }
 
 .footer {
   font-size: 1.4rem;
   text-align: center;
-  color: #555;
+  color: #888;
 }
 
 .order {
@@ -170,15 +171,16 @@ body {
   font-family: inherit;
   font-size: 1.4rem;
   font-weight: 500;
-  background-color: #ffc107;
+  background-color: #00ffb2;
   color: #111;
   padding: 1.2rem 3rem;
   border: none;
   border-radius: 0.6rem;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-  background-color: #e0a800;
+  background-color: #00e6a2;
+  transform: translateY(-2px);
 }
